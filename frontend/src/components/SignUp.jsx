@@ -1,5 +1,7 @@
+import { useState } from "react";
 
 export function SignUp() {
+  const [count,setCount] = useState(0);
 
   return <div className="flex justify-center items-center h-screen">
     <div className="flex flex-col bg-white p-5 rounded gap-5">
