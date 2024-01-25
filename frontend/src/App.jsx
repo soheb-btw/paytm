@@ -1,10 +1,16 @@
 import { SignUp } from "./components/SignUp"
+import { BrowserRouter as Router,Routes,Route,Navigate } from 'react-router-dom';
+import { Dashboard } from './components/Dashboard';
 
 function App() {
 
-  return <div>
-    <SignUp />
-  </div>
+  return <Router>
+    <Routes>
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="*" element={<Navigate to="/signup" />} />
+    </Routes>
+  </Router>
 
 }
 
