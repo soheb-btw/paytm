@@ -1,6 +1,6 @@
-import { SignUp } from "./components/SignUp"
+import { SignUp } from "./pages/SignUp"
 import { BrowserRouter as Router,Routes,Route,Navigate } from 'react-router-dom';
-import { Dashboard } from './components/Dashboard';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
 
